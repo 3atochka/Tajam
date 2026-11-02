@@ -1,0 +1,139 @@
+@media (max-width: 992px) {
+    .nav {
+        gap: 18px;
+    }
+
+    .story-inner img {
+        margin: 0;
+    }
+
+    .works-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        background-color: var(--dark);
+    }
+
+    .nav a {
+        padding: 14px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .header:target .nav {
+        display: flex;
+    }
+
+    .header:target .burger-close {
+        display: block;
+    }
+
+    .header:target .burger {
+        display: none;
+    }
+
+    .slide h1,
+    .slide h2 {
+        font-size: 28px;
+    }
+
+    .story-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story-inner img {
+        width: 200px;
+    }
+
+    .video {
+        height: 420px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .service {
+        border-right: none;
+    }
+
+    .service:nth-child(n+4) {
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .service:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .slide h1,
+    .slide h2 {
+        font-size: 24px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .dots {
+        bottom: 30px;
+    }
+
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .to-top,
+    .to-bottom {
+        right: 12px;
+        width: 34px;
+        height: 34px;
+        font-size: 17px;
+        line-height: 34px;
+    }
+
+    .to-top {
+        bottom: 56px;
+    }
+
+    .to-bottom {
+        bottom: 12px;
+    }
+
+    .people-nav {
+        gap: 12px;
+    }
+
+    .avatars {
+        gap: 10px;
+    }
+
+    .avatars img {
+        width: 36px;
+        height: 36px;
+    }
+}
